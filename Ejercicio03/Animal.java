@@ -1,4 +1,4 @@
-public class Animal{
+public abstract class Animal{
     
     //Atributos
     private Sexo sexo;
@@ -13,7 +13,16 @@ public class Animal{
     }
 
     //Getter
-    String getSexo(){
+    Sexo getSexo(){
         return this.sexo;
+    }
+
+    //Metodos
+    public void duerme(){
+        System.out.println("Zzzzzz");
+    }
+
+    public void come(String comida){
+        System.out.println("Estoy comiendo "+comida);
     }
 }
